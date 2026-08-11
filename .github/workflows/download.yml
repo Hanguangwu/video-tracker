@@ -1,0 +1,77 @@
+name: 视频下载（手动）
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_name:
+        description: '分组名（channels.json/CHANNELS 中的键），默认全部'
+        required: false
+        default: ''
+      video_url:
+        description: '单个视频 URL（优先于此输入时忽略 source_name）'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安装系统依赖（ffmpeg 合并音视频）
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: 安装 Python 依赖
+        run: pip install -r requirements.txt
+
+      - name: 下载视频
+        env:
+          CHANNELS: ${{ secrets.CHANNELS }}
+          COOKIES: ${{ secrets.COOKIES }}
+        run: |
+          ARGS=""
+          if [ -n "${{ github.event.inputs.video_url }}" ]; then
+            ARGS="--video-url ${{ github.event.inputs.video_url }}"
+          elif [ -n "${{ github.event.inputs.source_name }}" ]; then
+            ARGS="--source ${{ github.event.inputs.source_name }}"
+          fi
+          python scripts/download.py $ARGS
+
+      - name: 上传到 GitHub Releases
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python scripts/gh_release.py --dir data/downloads
+
+      - name: 发送通知（含下载链接）
+        env:
+          DINGTALK_WEBHOOK: ${{ secrets.DINGTALK_WEBHOOK }}
+          SERVERCHAN_KEY: ${{ secrets.SERVERCHAN_KEY }}
+        run: |
+          python - <<'EOF'
+          import json
+          from pathlib import Path
+          from scripts.notify import send_summary
+          manifest = json.loads(Path("data/downloads/manifest.json").read_text(encoding="utf-8"))
+          files = [f"{f['name']} ({f['size_mb']} MB)" for f in manifest["files"]]
+          send_summary("视频下载完成", "\n".join(files) if files else "无新文件（archive 已去重）")
+          EOF
+
+      - name: 提交 archive.txt
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add archive.txt
+          git diff --staged --quiet || (
+            git commit -m "chore: 更新下载 archive $(date +'%Y-%m-%d %H:%M') [skip ci]" &&
+            git push
+          )

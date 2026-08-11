@@ -1,0 +1,11 @@
+# 视频文件（绝不入库）
+data/downloads/
+
+# 敏感文件
+.env
+cookies*.txt
+
+# 临时/缓存
+*.part
+__pycache__/
+*.pyc
