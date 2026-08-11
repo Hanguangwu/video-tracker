@@ -7,6 +7,7 @@ kind/platform 均为自动推断，无需手工标注。
 """
 from __future__ import annotations
 
+import base64
 import json
 import os
 import tempfile
@@ -55,10 +56,19 @@ def load_channels() -> Dict[str, List[str]]:
 
 
 def load_cookies() -> Optional[Path]:
-    """COOKIES env 写入系统临时目录，返回路径（用完需删除）；未配置返回 None。"""
+    """COOKIES env 写入系统临时目录，返回路径（用完需删除）；未配置返回 None。
+
+    兼容两种形态：直接 Netscape 文本，或 base64 编码的单行值（GitHub Secret 场景）。
+    """
     raw = os.environ.get("COOKIES")
     if not raw:
         return None
+    try:
+        decoded = base64.b64decode(raw, validate=True).decode("utf-8")
+        if "\n" in decoded:
+            raw = decoded
+    except Exception:
+        pass
     fd, path = tempfile.mkstemp(prefix="vt_cookies_", suffix=".txt")
     with os.fdopen(fd, "w", encoding="utf-8") as fh:
         fh.write(raw)

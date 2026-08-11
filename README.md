@@ -29,6 +29,7 @@ scripts/
 archive.txt          # yt-dlp 下载去重（入库）
 data/
   seen.txt           # 转录去重（入库）
+  skipped.txt        # 会员专属/需登录/不可用 跳过记录（入库，删除可重试）
   transcripts/       # 转录文本（入库）
   metadata/          # 视频元数据（入库）
   downloads/         # 视频文件（.gitignore，不入库）
@@ -65,15 +66,16 @@ python scripts/track.py --source "文昭 Wen Zhao 频道" --dry-run
 | Secret | 说明 | 必需 |
 |---|---|---|
 | `SMTP_HOST` / `SMTP_PORT` | QQ 邮箱：`smtp.qq.com` / `465` | Email 必需 |
-| `SMTP_USER` / `SMTP_PASS` | 发信 QQ 邮箱 + **授权码**（非登录密码） | Email 必需 |
+| `SMTP_USER` / `SMTP_PASS` | 发信 QQ 邮箱（**须完整 xxx@qq.com**，非纯QQ号）+ **授权码**（非登录密码） | Email 必需 |
 | `MAIL_TO` | 收件人邮箱 | Email 必需 |
 | `MAIL_FROM` | 发件人（默认=SMTP_USER，可省略） | 否 |
 | `DINGTALK_WEBHOOK` | 钉钉机器人 webhook | 通知可选 |
 | `SERVERCHAN_KEY` | Server酱 SendKey（微信推送） | 通知可选 |
-| `COOKIES` | Netscape 格式 Cookie（登录态/受限视频） | 否 |
+| `COOKIES` | Netscape 格式 Cookie（登录态/受限视频）；多行可 base64 编码后存单行 | 否 |
 | `CHANNELS` | 跟踪源 JSON，覆盖 config/channels.json | 否 |
 
 > QQ 邮箱授权码：邮箱设置 → 账户 → 开启 POP3/SMTP 服务 → 生成授权码（16 位）。
+> SMTP_USER 必须是完整邮箱地址；SMTP 信封发件人须与登录账号一致（默认即 SMTP_USER，无需改动 MAIL_FROM）。
 
 **本地 `.env`**：复制 `.env.example` 为 `.env` 填好即可（已被 `.gitignore` 排除，不会入库）。
 
@@ -85,5 +87,6 @@ python scripts/track.py --source "文昭 Wen Zhao 频道" --dry-run
 ## 注意
 
 - 视频文件一律进 GitHub Releases 而非 git（git 单文件硬限 100MB；Releases 单文件上限 2GB）
+- 会员专属 / 需登录 / 已删除视频自动**跳过**并记录到 `data/skipped.txt`（不误报为失败、不重复尝试）；配置好 COOKIES 后删除 `data/skipped.txt`（或对应行）即可对这些视频重试
 - 转录文本/元数据/去重记录为 KB 级，正常入库
 - 请仅用于监控/备份你自己拥有版权或已获授权的内容
