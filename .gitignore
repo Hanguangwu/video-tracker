@@ -9,3 +9,5 @@ cookies*.txt
 *.part
 __pycache__/
 *.pyc
+.idea
+.venv
