@@ -1,17 +1,14 @@
 {
-  "date": "2026-08-13T01:17:37.536687+00:00",
+  "date": "2026-08-13T07:15:55.266693+00:00",
   "dry_run": false,
   "sources": [
     {
       "group": "文昭 Wen Zhao 频道",
       "url": "https://www.youtube.com/@wenzhaoofficial/videos",
       "kind": "channel",
-      "new": 1,
+      "new": 0,
       "saved": [],
-      "no_subtitle": [],
-      "skipped": {
-        "KQOxUxIEGv4": "needs_auth"
-      }
+      "no_subtitle": []
     },
     {
       "group": "零度解说 频道",
@@ -33,12 +30,9 @@
       "group": "江峰时刻 频道",
       "url": "https://www.youtube.com/@JiangFengTimes/videos",
       "kind": "channel",
-      "new": 1,
+      "new": 0,
       "saved": [],
-      "no_subtitle": [],
-      "skipped": {
-        "N6UHd21khTE": "needs_auth"
-      }
+      "no_subtitle": []
     },
     {
       "group": "文昭思绪飞扬 频道",
