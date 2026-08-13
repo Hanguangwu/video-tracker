@@ -6,6 +6,7 @@
 
 - **模式 A（默认，定时）**：cron 每 6 小时扫描配置的频道 → 新视频自动抓 YouTube 字幕 → 转录为纯文本 → **Email 一次一封** + **钉钉/微信摘要通知**
 - **模式 B（手动）**：手动触发下载视频（最高 1080p mp4）→ 上传 GitHub Releases → 通知附下载链接
+- **GitHub Pages 存档站**：自动把 `data/metadata/*.json` 整理成可读网页（含转录全文）发布到 Pages
 - 去重：`data/seen.txt`（转录）+ `archive.txt`（真下载），两套互不干扰
 - 无新视频时不发邮件/通知，不打扰
 - 预留 Bilibili 支持（yt-dlp 原生；配置按 URL 自动识别平台）
@@ -16,6 +17,7 @@
 .github/workflows/
   track.yml          # 模式 A：定时监控主流程
   download.yml       # 模式 B：手动下载 → Releases
+  pages.yml          # metadata JSON → 可读网页 → GitHub Pages
 config/
   channels.json      # 默认跟踪源（非敏感，入库）
 scripts/
@@ -26,6 +28,7 @@ scripts/
   emailer.py         # SMTP 发送转录（QQ 邮箱授权码）
   download.py        # 模式 B 下载
   gh_release.py      # 上传 GitHub Releases
+  build_site.py      # 生成 Pages 静态站点 site/index.html
 archive.txt          # yt-dlp 下载去重（入库）
 data/
   seen.txt           # 转录去重（入库）
@@ -83,6 +86,15 @@ python scripts/track.py --source "文昭 Wen Zhao 频道" --dry-run
 
 - **立即跑一次模式 A**：Actions → 视频跟踪 → Run workflow
 - **下载视频到 Releases**：Actions → 视频下载（手动）→ 填 `source_name`（分组名）或 `video_url` → Run workflow
+- **立即重建 Pages**：Actions → 发布 GitHub Pages → Run workflow（平时在每次主流程跑完后自动更新，无需手动）
+
+## GitHub Pages 存档站
+
+每次主流程（track.yml）跑完后，`发布 GitHub Pages` 工作流自动把 `data/metadata/*.json` 整理成可读网页发布：每个视频显示标题（可点击跳转）+ 转录全文（可折叠展开），按发现时间倒序。
+
+**一次性配置**：仓库 → Settings → Pages → Source 选择 **GitHub Actions**（部署由 `pages.yml` 负责，勿选"Deploy from a branch"）。之后访问 `https://<用户名>.github.io/<仓库名>/` 即可。
+
+本地预览：`python scripts/build_site.py` 生成 `site/index.html`（已被 .gitignore 排除，不入库）。
 
 ## 注意
 

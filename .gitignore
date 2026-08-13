@@ -1,6 +1,9 @@
 # 视频文件（绝不入库）
 data/downloads/
 
+# 本地生成的 Pages 站点（CI 中动态构建，不入库）
+site/
+
 # 敏感文件
 .env
 cookies*.txt

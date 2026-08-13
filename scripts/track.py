@@ -170,7 +170,8 @@ def fetch_subtitles(url: str, video_id: str, cookie_path: Optional[Path]) -> str
 def save_metadata(video: Dict) -> None:
     METADATA_DIR.mkdir(parents=True, exist_ok=True)
     path = METADATA_DIR / f"{video['id']}.json"
-    path.write_text(json.dumps(video, ensure_ascii=False, indent=2), encoding="utf-8")
+    data = {**video, "created_at": datetime.now(timezone.utc).isoformat()}
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def cleanup_subtitle_files(video_id: str) -> None:
