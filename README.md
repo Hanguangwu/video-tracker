@@ -71,7 +71,7 @@ python scripts/track.py --source "文昭 Wen Zhao 频道" --dry-run
 | `MAIL_FROM` | 发件人（默认=SMTP_USER，可省略） | 否 |
 | `DINGTALK_WEBHOOK` | 钉钉机器人 webhook | 通知可选 |
 | `SERVERCHAN_KEY` | Server酱 SendKey（微信推送） | 通知可选 |
-| `COOKIES` | Netscape 格式 Cookie（登录态/受限视频）；多行可 base64 编码后存单行 | 否 |
+| `COOKIES` | Netscape 格式 Cookie（兜底：会员/年龄限制视频）；CI 主路径走 PO token provider，无需手动刷新；多行可 base64 编码后存单行 | 否 |
 | `CHANNELS` | 跟踪源 JSON，覆盖 config/channels.json | 否 |
 
 > QQ 邮箱授权码：邮箱设置 → 账户 → 开启 POP3/SMTP 服务 → 生成授权码（16 位）。
@@ -89,4 +89,5 @@ python scripts/track.py --source "文昭 Wen Zhao 频道" --dry-run
 - 视频文件一律进 GitHub Releases 而非 git（git 单文件硬限 100MB；Releases 单文件上限 2GB）
 - 会员专属 / 需登录 / 已删除视频自动**跳过**并记录到 `data/skipped.txt`（不误报为失败、不重复尝试）；配置好 COOKIES 后删除 `data/skipped.txt`（或对应行）即可对这些视频重试
 - 转录文本/元数据/去重记录为 KB 级，正常入库
+- GitHub Actions 跑在数据中心 IP 上，YouTube 会要求 "Sign in to confirm you're not a bot"：workflow 已自动安装 bgutil-ytdlp-pot-provider（PO token provider）+ EJS runtime（node）绕过，无需任何 Secret；COOKIES 仅作会员/年龄限制视频的兜底
 - 请仅用于监控/备份你自己拥有版权或已获授权的内容

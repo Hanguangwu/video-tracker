@@ -166,7 +166,7 @@ workflow_dispatch inputs:
 | `MAIL_FROM` | 发件人（默认=SMTP_USER，可省略） | 否 |
 | `DINGTALK_WEBHOOK` | 钉钉机器人 webhook | 否 |
 | `SERVERCHAN_KEY` | Server酱 SendKey（微信推送） | 否 |
-| `COOKIES` | Netscape 格式 Cookie（部分视频需要登录态） | 否 |
+| `COOKIES` | Netscape 格式 Cookie（兜底：会员/年龄限制视频；CI 主路径为 PO token provider） | 否 |
 
 > 敏感信息一律只进 env，日志禁止打印。`GITHUB_TOKEN` 由 Actions 自动注入，无需手动配置。
 > QQ 邮箱授权码：邮箱设置 → 账户 → 开启 SMTP 服务 → 生成授权码（16 位）。config/channels.json 为非敏感默认配置，直接入库。
@@ -189,6 +189,7 @@ workflow_dispatch inputs:
 - `.vtt` → 去时间轴 → 纯文本，KB 级，直接入库 + Email
 - 无字幕时降级：标记"无可用字幕"，通知中提示，不阻塞流程
 - （未来增强：可选 whisper 本地转录，标记为后续工作，不进首版）
+- GitHub Actions 数据中心 IP 会被 YouTube 拦截：workflow 自动安装 bgutil-ytdlp-pot-provider（PO token provider）+ EJS node 运行时，yt-dlp 以 `--js-runtimes node --extractor-args "youtube:player_client=mweb"` 运行（track.py/download.py 通过 `YTDLP_JS_RUNTIMES` / `YTDLP_EXTRACTOR_ARGS` 环境变量注入，本地不设 env 时行为不变）
 
 ### 8.4 大文件分流
 - 视频从不 commit：`data/downloads/` 在 `.gitignore`

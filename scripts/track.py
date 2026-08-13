@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -101,6 +102,12 @@ def build_ytdlp_base(cookie_path: Optional[Path]) -> List[str]:
         "--retries", str(RETRIES),
         "--no-warnings",
     ]
+    js_runtimes = os.environ.get("YTDLP_JS_RUNTIMES")
+    if js_runtimes:
+        args += ["--js-runtimes", js_runtimes]
+    extractor_args = os.environ.get("YTDLP_EXTRACTOR_ARGS")
+    if extractor_args:
+        args += ["--extractor-args", extractor_args]
     if cookie_path:
         args += ["--cookies", str(cookie_path)]
     return args
