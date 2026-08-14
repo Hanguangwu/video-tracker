@@ -96,3 +96,5 @@ kexUQ3a8GVc	needs_auth
 z07sRh_qGkg	needs_auth
 mrGoVomziX8	needs_auth
 qPR91wHXPvo	members_only
+5G_afoTB1gs	needs_auth
+q0yVu95BRc8	needs_auth
