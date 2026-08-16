@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-16T12:23:22.954730+00:00",
+  "date": "2026-08-16T18:17:51.975864+00:00",
   "dry_run": false,
   "sources": [
     {
@@ -14,9 +14,12 @@
       "group": "零度解说 频道",
       "url": "https://www.youtube.com/@lingdujieshuo/videos",
       "kind": "channel",
-      "new": 0,
+      "new": 1,
       "saved": [],
-      "no_subtitle": []
+      "no_subtitle": [],
+      "skipped": {
+        "G3VuRBSATpA": "needs_auth"
+      }
     },
     {
       "group": "政经最前线 频道",
