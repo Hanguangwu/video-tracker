@@ -1,14 +1,17 @@
 {
-  "date": "2026-08-16T00:52:22.429495+00:00",
+  "date": "2026-08-16T06:27:11.134799+00:00",
   "dry_run": false,
   "sources": [
     {
       "group": "文昭 Wen Zhao 频道",
       "url": "https://www.youtube.com/@wenzhaoofficial/videos",
       "kind": "channel",
-      "new": 0,
+      "new": 1,
       "saved": [],
-      "no_subtitle": []
+      "no_subtitle": [],
+      "skipped": {
+        "YXj60RAYmrA": "members_only"
+      }
     },
     {
       "group": "零度解说 频道",
@@ -38,12 +41,9 @@
       "group": "文昭思绪飞扬 频道",
       "url": "https://www.youtube.com/@wenzhaostudio/videos",
       "kind": "channel",
-      "new": 1,
+      "new": 0,
       "saved": [],
-      "no_subtitle": [],
-      "skipped": {
-        "3wO2mW3eylw": "needs_auth"
-      }
+      "no_subtitle": []
     }
   ],
   "new_videos": 0,
