@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-18T18:26:29.390954+00:00",
+  "date": "2026-08-19T00:48:35.981229+00:00",
   "dry_run": false,
   "sources": [
     {
@@ -38,11 +38,15 @@
       "group": "文昭思绪飞扬 频道",
       "url": "https://www.youtube.com/@wenzhaostudio/videos",
       "kind": "channel",
-      "new": 0,
+      "new": 1,
       "saved": [],
-      "no_subtitle": []
+      "no_subtitle": [
+        "7LtTF0Zfmw4"
+      ]
     }
   ],
-  "new_videos": 0,
-  "new_ids": []
+  "new_videos": 1,
+  "new_ids": [
+    "7LtTF0Zfmw4"
+  ]
 }
