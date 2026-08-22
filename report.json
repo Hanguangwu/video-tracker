@@ -1,14 +1,17 @@
 {
-  "date": "2026-08-21T18:25:59.316553+00:00",
+  "date": "2026-08-22T00:48:33.485171+00:00",
   "dry_run": false,
   "sources": [
     {
       "group": "文昭 Wen Zhao 频道",
       "url": "https://www.youtube.com/@wenzhaoofficial/videos",
       "kind": "channel",
-      "new": 0,
+      "new": 1,
       "saved": [],
-      "no_subtitle": []
+      "no_subtitle": [],
+      "skipped": {
+        "aiGgRTqUlRI": "needs_auth"
+      }
     },
     {
       "group": "零度解说 频道",
