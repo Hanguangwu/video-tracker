@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-25T06:33:32.765835+00:00",
+  "date": "2026-08-25T12:33:12.099642+00:00",
   "dry_run": false,
   "sources": [
     {
@@ -30,12 +30,9 @@
       "group": "江峰时刻 频道",
       "url": "https://www.youtube.com/@JiangFengTimes/videos",
       "kind": "channel",
-      "new": 1,
+      "new": 0,
       "saved": [],
-      "no_subtitle": [],
-      "skipped": {
-        "AygzoyMSrQI": "needs_auth"
-      }
+      "no_subtitle": []
     },
     {
       "group": "文昭思绪飞扬 频道",
