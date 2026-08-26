@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-26T00:52:15.231876+00:00",
+  "date": "2026-08-26T06:35:43.128205+00:00",
   "dry_run": false,
   "sources": [
     {
@@ -30,20 +30,20 @@
       "group": "江峰时刻 频道",
       "url": "https://www.youtube.com/@JiangFengTimes/videos",
       "kind": "channel",
-      "new": 0,
+      "new": 1,
       "saved": [],
-      "no_subtitle": []
+      "no_subtitle": [],
+      "skipped": {
+        "fLJT7Jd20QQ": "needs_auth"
+      }
     },
     {
       "group": "文昭思绪飞扬 频道",
       "url": "https://www.youtube.com/@wenzhaostudio/videos",
       "kind": "channel",
-      "new": 1,
+      "new": 0,
       "saved": [],
-      "no_subtitle": [],
-      "skipped": {
-        "eGwGn2Fy8K0": "members_only"
-      }
+      "no_subtitle": []
     }
   ],
   "new_videos": 0,
