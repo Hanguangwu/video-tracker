@@ -1,55 +1,52 @@
 {
-  "date": "2026-08-28T08:20:23.567198+00:00",
+  "date": "2026-08-28T21:37:38.113578+00:00",
   "dry_run": false,
   "sources": [
     {
       "group": "文昭 Wen Zhao 频道",
       "url": "https://www.youtube.com/@wenzhaoofficial/videos",
       "kind": "channel",
-      "new": 1,
+      "new": 0,
       "saved": [],
-      "no_subtitle": [],
-      "skipped": {
-        "aEpmZQjHPHI": "members_only"
-      }
+      "no_subtitle": []
     },
     {
       "group": "零度解说 频道",
       "url": "https://www.youtube.com/@lingdujieshuo/videos",
       "kind": "channel",
-      "new": 0,
+      "new": 1,
       "saved": [],
-      "no_subtitle": []
+      "no_subtitle": [],
+      "skipped": {
+        "f1jTKaNKjvA": "needs_auth"
+      }
     },
     {
       "group": "政经最前线 频道",
       "url": "https://www.youtube.com/@democratictaiwanchannel/videos",
       "kind": "channel",
-      "new": 0,
+      "new": 1,
       "saved": [],
-      "no_subtitle": []
+      "no_subtitle": [],
+      "skipped": {
+        "eZVmenCydGE": "needs_auth"
+      }
     },
     {
       "group": "江峰时刻 频道",
       "url": "https://www.youtube.com/@JiangFengTimes/videos",
       "kind": "channel",
-      "new": 1,
+      "new": 0,
       "saved": [],
-      "no_subtitle": [],
-      "skipped": {
-        "dvejn-4l-QY": "needs_auth"
-      }
+      "no_subtitle": []
     },
     {
       "group": "文昭思绪飞扬 频道",
       "url": "https://www.youtube.com/@wenzhaostudio/videos",
       "kind": "channel",
-      "new": 1,
+      "new": 0,
       "saved": [],
-      "no_subtitle": [],
-      "skipped": {
-        "issVQgIRCtk": "needs_auth"
-      }
+      "no_subtitle": []
     }
   ],
   "new_videos": 0,

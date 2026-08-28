@@ -136,3 +136,5 @@ syKGvKUtlWM	needs_auth
 aEpmZQjHPHI	members_only
 dvejn-4l-QY	needs_auth
 issVQgIRCtk	needs_auth
+f1jTKaNKjvA	needs_auth
+eZVmenCydGE	needs_auth
