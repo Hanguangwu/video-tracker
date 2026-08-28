@@ -133,3 +133,6 @@ hy0UBZgXgYQ	needs_auth
 KRhUqKZ_wjU	needs_auth
 syKGvKUtlWM	needs_auth
 9QdTg2XjlzI	needs_auth
+aEpmZQjHPHI	members_only
+dvejn-4l-QY	needs_auth
+issVQgIRCtk	needs_auth
