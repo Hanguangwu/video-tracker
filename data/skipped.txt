@@ -138,3 +138,6 @@ dvejn-4l-QY	needs_auth
 issVQgIRCtk	needs_auth
 f1jTKaNKjvA	needs_auth
 eZVmenCydGE	needs_auth
+5UOuBnwtaNU	needs_auth
+ZoDiXrbLh2s	needs_auth
+y7QAuau326g	needs_auth
