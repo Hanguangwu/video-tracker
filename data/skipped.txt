@@ -143,3 +143,5 @@ ZoDiXrbLh2s	needs_auth
 y7QAuau326g	needs_auth
 MAKZDSI54as	needs_auth
 Mbxj21vwFfk	needs_auth
+NnrKilb-48s	members_only
+etLLtD15eEY	members_only
