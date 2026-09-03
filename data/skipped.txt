@@ -153,3 +153,5 @@ Ux1_gQHgjJ4	members_only
 klOG-mK5nDo	needs_auth
 erCgUAhGoyw	needs_auth
 mimw1ZnXBEM	needs_auth
+jHEzsotqRP4	needs_auth
+JnKFmtGubUE	needs_auth
