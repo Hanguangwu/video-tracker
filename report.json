@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-03T15:34:35.450952+00:00",
+  "date": "2026-09-03T20:21:21.710830+00:00",
   "dry_run": false,
   "sources": [
     {
@@ -14,23 +14,17 @@
       "group": "零度解说 频道",
       "url": "https://www.youtube.com/@lingdujieshuo/videos",
       "kind": "channel",
-      "new": 1,
+      "new": 0,
       "saved": [],
-      "no_subtitle": [],
-      "skipped": {
-        "jHEzsotqRP4": "needs_auth"
-      }
+      "no_subtitle": []
     },
     {
       "group": "政经最前线 频道",
       "url": "https://www.youtube.com/@democratictaiwanchannel/videos",
       "kind": "channel",
-      "new": 1,
+      "new": 0,
       "saved": [],
-      "no_subtitle": [],
-      "skipped": {
-        "JnKFmtGubUE": "needs_auth"
-      }
+      "no_subtitle": []
     },
     {
       "group": "江峰时刻 频道",
