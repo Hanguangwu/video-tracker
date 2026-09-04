@@ -155,3 +155,6 @@ erCgUAhGoyw	needs_auth
 mimw1ZnXBEM	needs_auth
 jHEzsotqRP4	needs_auth
 JnKFmtGubUE	needs_auth
+Q9sayjxi1PM	members_only
+NfFXTK4N51Q	needs_auth
+SD7tHsaseN8	needs_auth
