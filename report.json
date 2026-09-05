@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-05T09:45:00.668782+00:00",
+  "date": "2026-09-05T14:20:23.976600+00:00",
   "dry_run": false,
   "sources": [
     {
@@ -14,9 +14,12 @@
       "group": "零度解说 频道",
       "url": "https://www.youtube.com/@lingdujieshuo/videos",
       "kind": "channel",
-      "new": 0,
+      "new": 1,
       "saved": [],
-      "no_subtitle": []
+      "no_subtitle": [],
+      "skipped": {
+        "Z_XC21Yovfs": "needs_auth"
+      }
     },
     {
       "group": "政经最前线 频道",
@@ -30,12 +33,9 @@
       "group": "江峰时刻 频道",
       "url": "https://www.youtube.com/@JiangFengTimes/videos",
       "kind": "channel",
-      "new": 1,
+      "new": 0,
       "saved": [],
-      "no_subtitle": [],
-      "skipped": {
-        "NsXMYEjgfW4": "needs_auth"
-      }
+      "no_subtitle": []
     },
     {
       "group": "文昭思绪飞扬 频道",
