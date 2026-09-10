@@ -172,3 +172,5 @@ Hsk3O-kbFMo	needs_auth
 LKTrHa4X31Q	needs_auth
 PZH7sfekXR4	needs_auth
 CJj3kfAjzmQ	needs_auth
+NbL9xD2KV4E	needs_auth
+gEXMr7v7O5M	needs_auth
