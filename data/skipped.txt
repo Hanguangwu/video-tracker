@@ -174,3 +174,6 @@ PZH7sfekXR4	needs_auth
 CJj3kfAjzmQ	needs_auth
 NbL9xD2KV4E	needs_auth
 gEXMr7v7O5M	needs_auth
+sFS8uxD5hcA	members_only
+iBKoK8q0-YY	needs_auth
+56tMNX5ZIS0	needs_auth
