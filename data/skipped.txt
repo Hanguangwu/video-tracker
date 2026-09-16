@@ -189,3 +189,5 @@ ICFqX2F51eY	needs_auth
 i6NNmNs4o0s	needs_auth
 49cBc4cMfuY	needs_auth
 wBuV19cYECU	needs_auth
+B86vRWId538	needs_auth
+ScolL15qLj8	members_only
