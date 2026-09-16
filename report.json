@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-16T02:42:12.378926+00:00",
+  "date": "2026-09-16T10:35:41.437771+00:00",
   "dry_run": false,
   "sources": [
     {
@@ -22,31 +22,28 @@
       "group": "政经最前线 频道",
       "url": "https://www.youtube.com/@democratictaiwanchannel/videos",
       "kind": "channel",
-      "new": 0,
+      "new": 1,
       "saved": [],
-      "no_subtitle": []
+      "no_subtitle": [],
+      "skipped": {
+        "4u78r9nzCso": "needs_auth"
+      }
     },
     {
       "group": "江峰时刻 频道",
       "url": "https://www.youtube.com/@JiangFengTimes/videos",
       "kind": "channel",
-      "new": 1,
+      "new": 0,
       "saved": [],
-      "no_subtitle": [],
-      "skipped": {
-        "B86vRWId538": "needs_auth"
-      }
+      "no_subtitle": []
     },
     {
       "group": "文昭思绪飞扬 频道",
       "url": "https://www.youtube.com/@wenzhaostudio/videos",
       "kind": "channel",
-      "new": 1,
+      "new": 0,
       "saved": [],
-      "no_subtitle": [],
-      "skipped": {
-        "ScolL15qLj8": "members_only"
-      }
+      "no_subtitle": []
     }
   ],
   "new_videos": 0,
