@@ -195,3 +195,5 @@ ScolL15qLj8	members_only
 JUu_J2NvoDA	needs_auth
 3jPkoEPaG9A	needs_auth
 rAY7xIuZVFM	needs_auth
+PbVfVdWMfnw	needs_auth
+BhoqA3C931U	needs_auth
