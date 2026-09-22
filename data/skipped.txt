@@ -208,3 +208,5 @@ A8eHYQXK7dI	needs_auth
 UNx587AizhU	needs_auth
 r2_Evfyupns	members_only
 5pJnNnXjEXk	needs_auth
+tc_BTgvlm48	needs_auth
+9pL9GxkTjXc	needs_auth
