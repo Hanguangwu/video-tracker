@@ -213,3 +213,5 @@ tc_BTgvlm48	needs_auth
 NXISrklNZ28	members_only
 QhauBycXEV0	needs_auth
 l7jahZDMjqQ	needs_auth
+HZxhGjpbSxE	needs_auth
+Qs2NzfAgH8I	needs_auth
