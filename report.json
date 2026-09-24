@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-24T02:32:01.204289+00:00",
+  "date": "2026-09-24T10:52:11.275437+00:00",
   "dry_run": false,
   "sources": [
     {
@@ -10,7 +10,7 @@
       "saved": [],
       "no_subtitle": [],
       "skipped": {
-        "HZxhGjpbSxE": "needs_auth"
+        "R5L4ZPShXOA": "members_only"
       }
     },
     {
@@ -33,12 +33,9 @@
       "group": "江峰时刻 频道",
       "url": "https://www.youtube.com/@JiangFengTimes/videos",
       "kind": "channel",
-      "new": 1,
+      "new": 0,
       "saved": [],
-      "no_subtitle": [],
-      "skipped": {
-        "Qs2NzfAgH8I": "needs_auth"
-      }
+      "no_subtitle": []
     },
     {
       "group": "文昭思绪飞扬 频道",
