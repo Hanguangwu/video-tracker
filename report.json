@@ -1,14 +1,17 @@
 {
-  "date": "2026-09-25T20:56:33.933730+00:00",
+  "date": "2026-09-26T02:52:14.375000+00:00",
   "dry_run": false,
   "sources": [
     {
       "group": "文昭 Wen Zhao 频道",
       "url": "https://www.youtube.com/@wenzhaoofficial/videos",
       "kind": "channel",
-      "new": 0,
+      "new": 1,
       "saved": [],
-      "no_subtitle": []
+      "no_subtitle": [],
+      "skipped": {
+        "kQZPgKQ1Zaw": "needs_auth"
+      }
     },
     {
       "group": "零度解说 频道",
@@ -22,17 +25,23 @@
       "group": "政经最前线 频道",
       "url": "https://www.youtube.com/@democratictaiwanchannel/videos",
       "kind": "channel",
-      "new": 0,
+      "new": 1,
       "saved": [],
-      "no_subtitle": []
+      "no_subtitle": [],
+      "skipped": {
+        "iPtafzdeO4g": "needs_auth"
+      }
     },
     {
       "group": "江峰时刻 频道",
       "url": "https://www.youtube.com/@JiangFengTimes/videos",
       "kind": "channel",
-      "new": 0,
+      "new": 1,
       "saved": [],
-      "no_subtitle": []
+      "no_subtitle": [],
+      "skipped": {
+        "cfLHoWu9cFM": "needs_auth"
+      }
     },
     {
       "group": "文昭思绪飞扬 频道",
