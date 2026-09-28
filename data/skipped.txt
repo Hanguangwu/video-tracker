@@ -225,3 +225,5 @@ kQZPgKQ1Zaw	needs_auth
 iPtafzdeO4g	needs_auth
 cfLHoWu9cFM	needs_auth
 sxny85UZr1A	needs_auth
+mflkpLe144c	members_only
+FSIM6MXrP1c	needs_auth
