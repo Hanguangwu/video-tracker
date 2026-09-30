@@ -232,3 +232,4 @@ rfBQjSFmPmc	needs_auth
 aFmPK6AZ8ls	needs_auth
 Q1PnBfU6eu8	needs_auth
 dT3X73dzj4E	members_only
+sgu-oS4PNUE	needs_auth
