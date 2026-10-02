@@ -236,3 +236,6 @@ sgu-oS4PNUE	needs_auth
 KW1fk_JP4lM	needs_auth
 aKWXz6i-X_w	needs_auth
 xwuA7LIUpfk	needs_auth
+qhk9zW96naM	members_only
+0opiBjewp08	needs_auth
+AQt5J_8osq0	needs_auth
