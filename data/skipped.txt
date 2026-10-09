@@ -257,3 +257,6 @@ Z_Foiw4UTPk	needs_auth
 vmBsVLIqcLA	needs_auth
 JZrDxAlfC5I	needs_auth
 P0NLw6e7XI8	needs_auth
+izXAX7_SycQ	members_only
+zeTuAyrQ3_0	needs_auth
+OQf2F-aDfVg	needs_auth
