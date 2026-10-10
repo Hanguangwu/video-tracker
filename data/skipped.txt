@@ -263,3 +263,5 @@ OQf2F-aDfVg	needs_auth
 tDcw0nm3Vbw	needs_auth
 85FOyGey3BY	needs_auth
 qUg1acy5OWk	members_only
+cKezbbcsPYs	needs_auth
+Wyh-HwgmdDg	needs_auth
