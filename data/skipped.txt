@@ -269,3 +269,6 @@ qkwaK9XNQUQ	needs_auth
 5vwr9vkomUY	members_only
 NdaUZvncyfE	needs_auth
 bUkVTlca2EM	needs_auth
+vuHC0BuKqd4	members_only
+PV98q8cz8mQ	needs_auth
+_RzG7uicz-0	members_only
