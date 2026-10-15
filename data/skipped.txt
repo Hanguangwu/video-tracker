@@ -274,3 +274,5 @@ PV98q8cz8mQ	needs_auth
 _RzG7uicz-0	members_only
 eJV3ZgVyOI4	needs_auth
 21JESU76KY0	needs_auth
+BPx1pZFaasM	needs_auth
+rv7CAP0npYw	needs_auth
