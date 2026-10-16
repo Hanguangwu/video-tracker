@@ -1,36 +1,33 @@
 {
-  "date": "2026-10-16T10:25:57.071309+00:00",
+  "date": "2026-10-16T15:52:07.120206+00:00",
   "dry_run": false,
   "sources": [
     {
       "group": "文昭 Wen Zhao 频道",
       "url": "https://www.youtube.com/@wenzhaoofficial/videos",
       "kind": "channel",
-      "new": 1,
-      "saved": [],
-      "no_subtitle": [],
-      "skipped": {
-        "kB-320D80tg": "members_only"
-      }
-    },
-    {
-      "group": "零度解说 频道",
-      "url": "https://www.youtube.com/@lingdujieshuo/videos",
-      "kind": "channel",
       "new": 0,
       "saved": [],
       "no_subtitle": []
     },
     {
-      "group": "政经最前线 频道",
-      "url": "https://www.youtube.com/@democratictaiwanchannel/videos",
+      "group": "零度解说 频道",
+      "url": "https://www.youtube.com/@lingdujieshuo/videos",
       "kind": "channel",
       "new": 1,
       "saved": [],
       "no_subtitle": [],
       "skipped": {
-        "OrXlqV5EGlo": "needs_auth"
+        "n17pKDffzgE": "needs_auth"
       }
+    },
+    {
+      "group": "政经最前线 频道",
+      "url": "https://www.youtube.com/@democratictaiwanchannel/videos",
+      "kind": "channel",
+      "new": 0,
+      "saved": [],
+      "no_subtitle": []
     },
     {
       "group": "江峰时刻 频道",
