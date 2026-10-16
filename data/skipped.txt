@@ -280,3 +280,5 @@ tkUV8phm-qU	needs_auth
 9v2nN2k7V4M	needs_auth
 WOm5btcxi5E	needs_auth
 mX8EU_KfSHA	needs_auth
+kB-320D80tg	members_only
+OrXlqV5EGlo	needs_auth
