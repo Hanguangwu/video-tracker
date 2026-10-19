@@ -287,3 +287,5 @@ n17pKDffzgE	needs_auth
 LgDZghVu2D0	needs_auth
 lk-3OuKyFNE	needs_auth
 v7ogIW-1JOM	needs_auth
+CYwNAqb71ac	members_only
+rtH0f5GiAXU	members_only
