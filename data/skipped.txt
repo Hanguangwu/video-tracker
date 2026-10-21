@@ -292,3 +292,5 @@ rtH0f5GiAXU	members_only
 OpSV5OcCObE	needs_auth
 UHoOPNSMbCA	needs_auth
 G5rWOw8Lnbg	needs_auth
+enlMGRZer8I	needs_auth
+HPQTIR_Z3kg	members_only
