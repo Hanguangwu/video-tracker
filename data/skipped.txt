@@ -299,3 +299,6 @@ HPQTIR_Z3kg	members_only
 2nkbHL10Y_4	needs_auth
 CAyLCkjnIbY	needs_auth
 I0bWddW3Upw	needs_auth
+1hih91auHgo	members_only
+GG4OT18uck8	needs_auth
+tCYwGbjoKbo	needs_auth
