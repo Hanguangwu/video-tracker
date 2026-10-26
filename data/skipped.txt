@@ -305,3 +305,5 @@ tCYwGbjoKbo	needs_auth
 8O7kZg5FZvI	needs_auth
 OGM6wOPE3P4	needs_auth
 ziKK2f0vTCw	needs_auth
+3QgnPcRBJMY	members_only
+F6tD6o4D9Zw	needs_auth
