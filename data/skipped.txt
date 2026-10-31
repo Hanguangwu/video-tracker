@@ -320,3 +320,6 @@ l8Nl539-Ock	needs_auth
 fbftGi-HhsE	needs_auth
 98u4v0aHgIQ	needs_auth
 0daRPz7i2TQ	needs_auth
+loNwMkNAgTs	members_only
+cZd2G7trVLk	needs_auth
+1d1h49-1oXM	needs_auth
