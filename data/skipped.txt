@@ -328,3 +328,6 @@ Z0XRflwhin8	needs_auth
 y99kzDGQWUk	needs_auth
 fnHKG_OjXN0	members_only
 bBbdCtj0C9k	needs_auth
+cRGZEsEmXY8	needs_auth
+ao6B7GR8tQY	needs_auth
+TmV_OJLWpfE	needs_auth
