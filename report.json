@@ -1,22 +1,27 @@
 {
-  "date": "2026-11-10T01:02:31.486529+00:00",
+  "date": "2026-11-10T14:04:02.364756+00:00",
   "dry_run": false,
   "sources": [
     {
       "group": "文昭 Wen Zhao 频道",
       "url": "https://www.youtube.com/@wenzhaoofficial/videos",
       "kind": "channel",
-      "new": 0,
+      "new": 1,
       "saved": [],
-      "no_subtitle": []
+      "no_subtitle": [
+        "OgSCyOYWUvk"
+      ]
     },
     {
       "group": "零度解说 频道",
       "url": "https://www.youtube.com/@lingdujieshuo/videos",
       "kind": "channel",
-      "new": 0,
+      "new": 1,
       "saved": [],
-      "no_subtitle": []
+      "no_subtitle": [],
+      "skipped": {
+        "6pYhK6xRuHE": "needs_auth"
+      }
     },
     {
       "group": "政经最前线 频道",
@@ -43,6 +48,8 @@
       "no_subtitle": []
     }
   ],
-  "new_videos": 0,
-  "new_ids": []
+  "new_videos": 1,
+  "new_ids": [
+    "OgSCyOYWUvk"
+  ]
 }
