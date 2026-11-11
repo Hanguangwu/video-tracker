@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-11T13:21:02.527179+00:00",
+  "date": "2026-11-11T23:55:24.083787+00:00",
   "dry_run": false,
   "sources": [
     {
@@ -22,12 +22,9 @@
       "group": "政经最前线 频道",
       "url": "https://www.youtube.com/@democratictaiwanchannel/videos",
       "kind": "channel",
-      "new": 1,
+      "new": 0,
       "saved": [],
-      "no_subtitle": [],
-      "skipped": {
-        "qkBIRyODbkA": "needs_auth"
-      }
+      "no_subtitle": []
     },
     {
       "group": "江峰时刻 频道",
