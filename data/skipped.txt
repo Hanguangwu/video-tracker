@@ -353,3 +353,5 @@ ZPbpoVwbCpc	members_only
 qkBIRyODbkA	needs_auth
 UIG5r85S2lQ	needs_auth
 JKw6AyQZwUY	needs_auth
+3EZig23cePs	needs_auth
+bnnQf_ykHB0	needs_auth
