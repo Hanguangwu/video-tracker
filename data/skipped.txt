@@ -360,3 +360,6 @@ UM9u7aaLlRA	needs_auth
 qRPMyr-IQX8	needs_auth
 1BTy5GmdIQA	needs_auth
 neSLAPiC1bg	needs_auth
+U72cQefFO0o	members_only
+V4Fn1oTZNPE	needs_auth
+vVI0DeRjnDM	needs_auth
