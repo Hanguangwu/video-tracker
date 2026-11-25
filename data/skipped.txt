@@ -390,3 +390,6 @@ nEA7LnLQ1j4	members_only
 -_02pTOyAHU	needs_auth
 upMWMwmjgGw	needs_auth
 mgn6Pu1La94	members_only
+AKX2-JfiG7A	needs_auth
+qvb9vW6Y94M	needs_auth
+HqvxC1BJ6Ag	needs_auth
